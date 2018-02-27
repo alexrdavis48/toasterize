@@ -1,0 +1,22 @@
+This package requires the following dependencies: 
+	- JQuery: https://jquery.com/
+	- Font-Awesome: http://fontawesome.io/
+
+Usage:
+	- Reference both "toast.js" and "toast-style.css" files in your site (after the dependencies listed above!).
+	- The function to register to event handlers is toast(type, message).
+		- Both arguments are string parameters.
+		- type argument accepts "default", "success", "warning", "danger", or "info" string values based on the type of message.
+		- message argument accepts any string value message you want. 
+
+Sample usage with JQuery click event: 
+
+	<button id="btnClick">Click!</button>
+
+	<script type="text/javascript">
+		$("#btnClick").click(function() {
+			toast("info", "You toasted!");
+		});
+	</script> 
+	 
+	
