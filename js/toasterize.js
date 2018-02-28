@@ -50,18 +50,29 @@ var toast = function(type, message) {
 		var iconDiv = document.createElement("div");
 		var contentDiv = document.createElement("div");
 		var i = document.createElement("i");
+		var x = document.createElement("i");
 		var p = document.createElement("p");
+		var btn = document.createElement("button");
+
+		btn.onclick= function() { 
+			var el = document.getElementById("toast-col");
+			var child = document.getElementById(c);
+			el.removeChild(child);
+		}
 		
 		outerDiv.className ="toast-msg " + bgColor;
 		outerDiv.id= c;
 		innerDiv.className ="toast-container";
 		iconDiv.className ="icon";
 		contentDiv.className ="content";
-		i.className ="fa " + icon;
+		i.className="fa " + icon;
+		x.className= "fa fa-times";
 		p.appendChild(document.createTextNode(message));
 
+		btn.appendChild(x);
 		contentDiv.appendChild(p);
 		iconDiv.appendChild(i);
+		innerDiv.appendChild(btn);
 		innerDiv.appendChild(iconDiv);
 		innerDiv.appendChild(contentDiv);
 		outerDiv.appendChild(innerDiv);

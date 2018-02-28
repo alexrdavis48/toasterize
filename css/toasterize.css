@@ -65,7 +65,28 @@ body, html {
   }
 
 .toast-container {
+	padding: 15px 5px 10px 5px;
+}
+
+.toast-container button {
+	background-color: transparent;
+	border: none;
+	position: absolute;
+	top: 0;
+	right: 0;
 	padding: 5px;
+	font-size: 1.2em;
+	color: #fff;
+	cursor: pointer;
+}
+
+.toast-container button:active {
+	outline: none;
+	border: none;
+}
+
+.toast-container button:focus {
+	outline:0;
 }
 
 .toast-msg .icon {
