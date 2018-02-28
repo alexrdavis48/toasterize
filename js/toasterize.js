@@ -82,6 +82,6 @@ var toast = function(type, message) {
 			var el = document.getElementById("toast-col");
 			var child = document.getElementById(c);
 			el.removeChild(child);
-		}, 4900);		
+		}, 6900);		
 	}	
 };

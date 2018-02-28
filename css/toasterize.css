@@ -41,8 +41,8 @@ body, html {
 	width: 100%;
 	margin-bottom: 2.5px;
 	font-size: 1em;
-	opacity: 1;
-	animation: 5s ease-in-out slideIn;
+	opacity: 0.95;
+	animation: 7s ease-in-out slideIn;
 }
 
 @keyframes slideIn {
@@ -52,11 +52,11 @@ body, html {
 	}
 	7.5% {
 	  transform: translateX(0%);
-	  opacity: 1;
+	  opacity: 0.95;
 	}
 	90% {
 		transform: translateX(0%);
-		opacity: 1;
+		opacity: 0.95;
 	}
 	100% {
 		opacity: 0;
